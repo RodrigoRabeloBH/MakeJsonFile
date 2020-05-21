@@ -3,6 +3,7 @@ const form = document.querySelector("form");
 const password = document.querySelector("#password");
 const clientId = document.querySelector("#clientId");
 const connection = document.querySelector("#connection");
+const url = document.querySelector("#url");
 const user = document.querySelector("#user");
 
 btn.addEventListener("click", () => {
@@ -22,6 +23,7 @@ function download() {
     Password: password.value,
     ClientId: parseInt(clientId.value),
     ConnectionString: connection.value,
+    url: url.value,
   };
 
   const json = JSON.stringify(credentil);

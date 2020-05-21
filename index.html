@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" />
+
     <title>Json Builder</title>
 </head>
 
@@ -13,7 +15,7 @@
     <nav class="navbar py-5">
     </nav>
     <div class="container-fluid">
-        <div class="col-sm-12 col-md-12 mx-auto bg-light">
+        <div class="col-sm-12 col-md-10 mx-auto bg-light">
             <div class="text-center mb-5">
                 <img src="logo_brumsker_negativo_ok-copy.png" class="img-fluid">
             </div>
@@ -38,8 +40,15 @@
                         <input type="text" class="form-control" id="connection" required>
                     </div>
                 </div>
+                <label for="basic-url">URL Api</label>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon3">https://example.com/users/</span>
+                    </div>
+                    <input type="text" class="form-control" id="url" aria-describedby="basic-addon3">
+                </div>
                 <div class="text-center">
-                    <a class="btn btn-sm text-white w-25 mb-5" href="#">Gerar Arquivo</a>
+                    <a class="btn btn-sm text-white mb-5" href="#">Gerar Arquivo</a>
                 </div>
             </form>
         </div>
