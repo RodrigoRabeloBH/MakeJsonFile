@@ -4,42 +4,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <title>Json Builder</title>
-    <style>
-        label {
-            cursor: pointer;
-        }
-    </style>
 </head>
 
-<body class="bg-light">
-    <div class="col-sm-12 col-md-9 mx-auto jumbotron mt-5">
-        <h2 class="text-center text-success">Brunsker Tecnologia</h2>
-        <form>
-            <div class="form-row">
-                <div class="form-group col-md-4">
-                    <label for="user">Usuário Magento</label>
-                    <input type="text" class="form-control" id="user" required>
-                </div>
-                <div class="form-group col-md-4">
-                    <label for="password">Password</label>
-                    <input type="text" class="form-control" id="password" required>
-                </div>
-                <div class="form-group col-md-4">
-                    <label for="clientId">Id Cliente</label>
-                    <input type="number" class="form-control" id="clientId" required>
-                </div>
+<body>
+    <nav class="navbar py-5">
+    </nav>
+    <div class="container-fluid">
+        <div class="col-sm-12 col-md-12 mx-auto bg-light">
+            <div class="text-center mb-5">
+                <img src="logo_brumsker_negativo_ok-copy.png" class="img-fluid">
             </div>
-            <div class="form-row">
-                <div class="form-group col-md-12">
-                    <label for="connection">String de Conexão Banco</label>
-                    <input type="text" class="form-control" id="connection" required>
+            <form>
+                <div class="form-row">
+                    <div class="form-group col-md-4">
+                        <label for="user">Usuário Magento</label>
+                        <input type="text" class="form-control" id="user" required>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="password">Password</label>
+                        <input type="text" class="form-control" id="password" required>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="clientId">Id Cliente</label>
+                        <input type="number" class="form-control" id="clientId" required>
+                    </div>
                 </div>
-            </div>
-            <a class="btn btn-success btn-sm" href="#">Gerar Arquivo</a>
-        </form>
+                <div class="form-row">
+                    <div class="form-group col-md-12">
+                        <label for="connection">String de Conexão Banco</label>
+                        <input type="text" class="form-control" id="connection" required>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <a class="btn btn-sm text-white w-25 mb-5" href="#">Gerar Arquivo</a>
+                </div>
+            </form>
+        </div>
     </div>
+
+    <footer class="py-5">
+        <h6 class="text-center text-secondary">Copyright &copy; Desenvolvido por: Rodrigo Rabelo - 20-05-2020</h6>
+    </footer>
     <script src="main.js"></script>
 </body>
 

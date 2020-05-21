@@ -1,0 +1,23 @@
+label {
+  cursor: pointer;
+}
+
+a {
+  background: #204f3c !important;
+}
+a:hover {
+  background: black !important;
+}
+label {
+  color: #204f3c !important;
+  font-weight: 600;
+}
+nav {
+  background: #204f3c !important;
+}
+footer {
+  background: #204f3c !important;
+}
+body {
+  background: #204f3c !important;
+}
