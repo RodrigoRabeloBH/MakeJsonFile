@@ -8,7 +8,7 @@ const user = document.querySelector("#user");
 btn.addEventListener("click", () => {
 
   if (!form.checkValidity())
-     alert("Prencha todos os campos corretamente!!");
+     alert("Preencha todos os campos corretamente!!");
   else
      download();
 
