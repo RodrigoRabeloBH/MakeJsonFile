@@ -6,24 +6,21 @@ const connection = document.querySelector("#connection");
 const url = document.querySelector("#url");
 const user = document.querySelector("#user");
 
-btn.addEventListener("click", () => {
-
-  if (!form.checkValidity())
-     alert("Preencha todos os campos corretamente!!");
-  else
-     download();
+btn.addEventListener("click", (e) => {
+  if (!form.checkValidity()) alert("Preencha todos os campos corretamente!!");
+  else download();
 
   clear();
+  e.preventDefault();
 });
 
 function download() {
-  
   const credentil = {
     Username: user.value,
     Password: password.value,
     ClientId: parseInt(clientId.value),
     ConnectionString: connection.value,
-    url: url.value,
+    Url: url.value,
   };
 
   const json = JSON.stringify(credentil);
@@ -33,7 +30,7 @@ function download() {
     "href",
     "data:text/plain;charset=utf-8," + encodeURIComponent(json)
   );
-  a.setAttribute("download", "UserData.json");
+  a.setAttribute("download", "parms.json");
 
   a.click();
 }
@@ -43,4 +40,5 @@ function clear() {
   password.value = "";
   clientId.value = "";
   connection.value = "";
+  url.value = "";
 }
