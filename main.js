@@ -5,6 +5,7 @@ const clientId = document.querySelector("#clientId");
 const connection = document.querySelector("#connection");
 const url = document.querySelector("#url");
 const user = document.querySelector("#user");
+const dir = document.querySelector("#dir");
 
 btn.addEventListener("click", (e) => {
   if (!form.checkValidity()) alert("Preencha todos os campos corretamente!!");
@@ -21,6 +22,7 @@ function download() {
     ClientId: parseInt(clientId.value),
     ConnectionString: connection.value,
     Url: url.value,
+    ImagesFolder: dir.value,
   };
 
   const json = JSON.stringify(credentil);
