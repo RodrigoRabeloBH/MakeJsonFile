@@ -24,7 +24,7 @@ function download() {
     ConnectionString: connection.value,
     Url: url.value,
     ImagesFolder: dir.value,
-    SalesmanId: salesmanId.value,
+    SalesmanId: parseInt(salesmanId.value),
   };
 
   const json = JSON.stringify(credentil);
