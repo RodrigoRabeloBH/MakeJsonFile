@@ -6,6 +6,7 @@ const connection = document.querySelector("#connection");
 const url = document.querySelector("#url");
 const user = document.querySelector("#user");
 const dir = document.querySelector("#dir");
+const salesmanId = document.querySelector("#salesmanId");
 
 btn.addEventListener("click", (e) => {
   if (!form.checkValidity()) alert("Preencha todos os campos corretamente!!");
@@ -23,6 +24,7 @@ function download() {
     ConnectionString: connection.value,
     Url: url.value,
     ImagesFolder: dir.value,
+    SalesmanId: salesmanId.value,
   };
 
   const json = JSON.stringify(credentil);
@@ -43,4 +45,6 @@ function clear() {
   clientId.value = "";
   connection.value = "";
   url.value = "";
+  dir.value = "";
+  salesmanId.value = "";
 }
